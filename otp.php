@@ -17,14 +17,11 @@ function reqotp($no){
 
 print "\033[0;32m 
 ===============+++++===================
- Powered by [MH] Mbah Hanif
- Sebagai Alternatif Mengambil OTP Tsel
- 
- Facebook: Jrdn AR
- +6282291809699
- https://www.mbahhanif.site/
+ Github : kumpulanremaja
+ facebook : KumpulanRemaja
+ Web : kumpulanremaja.com
 ===============+++++===================
-\n Minta OTP Tsel \n " ;
+\n Minta Kode OTP Telkomsel \n " ;
 echo " \033[36;1m Nomor 62xx: ";
 $nomor = trim(fgets(STDIN));
 $execute = reqotp($nomor);
