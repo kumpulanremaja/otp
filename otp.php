@@ -1,5 +1,5 @@
 <?php
-function reqotp($no){
+function otp($no){
         $ch = curl_init();
         curl_setopt($ch, CURLOPT_URL,"https://tdwidm.telkomsel.com/passwordless/start");
         curl_setopt($ch, CURLOPT_POST, 1);
@@ -24,7 +24,7 @@ print "\033[0;32m
 \n Minta Kode OTP Telkomsel \n " ;
 echo " \033[36;1m Nomor 62xx: ";
 $nomor = trim(fgets(STDIN));
-$execute = reqotp($nomor);
+$execute = otp($nomor);
 print $execute;
 print "\033[36;1m OTP Berhasil Terkirim! \n";
 
